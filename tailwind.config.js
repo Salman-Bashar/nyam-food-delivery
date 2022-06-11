@@ -14,6 +14,14 @@ module.exports = {
         "brand-dark-1": "#323232",
         "brand-grey-1": "#C4C4C4",
       },
+      boxShadow: {
+        red: "0 0 1px 1px #EB3738",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      margin: ["first"],
     },
   },
   plugins: [],
