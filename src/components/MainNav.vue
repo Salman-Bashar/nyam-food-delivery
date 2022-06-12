@@ -1,7 +1,10 @@
 <template>
-  <header class="w-full text-sm">
-    <div class="fixed top-0 left-0 w-full h-16 bg-brand-red-1">
+  <header :class="['w-full', 'text-sm', headerHeightClass]">
+    <div
+      class="fixed top-0 left-0 w-full h-16 border-b border-solid border-brand-grey-1 bg-brand-red-1"
+    >
       <div class="flex flex-nowrap h-full px-44 mx-auto">
+        <img :src="logo" class="h-12 mr-2 pt-4" />
         <a href="/" class="flex items-center h-full text-xl font-bold">{{
           company
         }}</a>
@@ -32,7 +35,7 @@
           />
         </div>
       </div>
-      <sub-nav />
+      <sub-nav v-if="isLoggedIn" data-test="sub-nav" />
     </div>
   </header>
 </template>
@@ -48,9 +51,18 @@ export default {
   data() {
     return {
       company: "Nyam.",
+      logo: require("@/assets/images/logo.png"),
       menuItems: ["Home", "Services", "Restaurants", "Contact", "Career"],
       isLoggedIn: false,
     };
+  },
+  computed: {
+    headerHeightClass() {
+      return {
+        "h-16": !this.isLoggedIn,
+        "h-32": this.isLoggedIn,
+      };
+    },
   },
   methods: {
     userLogin() {

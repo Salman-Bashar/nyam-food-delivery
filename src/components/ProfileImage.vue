@@ -1,5 +1,5 @@
 <template>
-  <img :src="imageLink" class="w-8 h-8 object-contain rounded-3xl" />
+  <img :src="imageLink" class="w-10 h-10 image-contain rounded-3xl mr-7" />
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {
   name: "ProfileImage",
   data() {
     return {
-      imageLink: "@/assets/profile-img.png",
+      imageLink: require("@/assets/images/profile-image.png"),
     };
   },
 };
