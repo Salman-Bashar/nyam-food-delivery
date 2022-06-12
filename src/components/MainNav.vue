@@ -14,9 +14,11 @@
               class="h-full ml-14 first:ml-0"
               data-test="main-nav-menu-item"
             >
-              <a href="" class="flex items-center h-full py-2.5 font-medium">{{
-                menuItem
-              }}</a>
+              <a
+                href=""
+                class="flex items-center h-full py-2.5 font-medium hover:text-brand-red-2"
+                >{{ menuItem }}</a
+              >
             </li>
           </ul>
         </nav>
@@ -30,21 +32,23 @@
           />
         </div>
       </div>
+      <sub-nav />
     </div>
   </header>
 </template>
 
 <script>
 import ActionButton from "@/components/ActionButton.vue";
-import ProfileImage from "./ProfileImage.vue";
+import ProfileImage from "@/components/ProfileImage.vue";
+import SubNav from "@/components/SubNav.vue";
 
 export default {
   name: "MainNav",
-  components: { ActionButton, ProfileImage },
+  components: { ActionButton, ProfileImage, SubNav },
   data() {
     return {
       company: "Nyam.",
-      menuItems: ["Home", "Services", "Menu", "Contact", "Location"],
+      menuItems: ["Home", "Services", "Restaurants", "Contact", "Career"],
       isLoggedIn: false,
     };
   },

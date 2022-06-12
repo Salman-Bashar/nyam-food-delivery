@@ -14,9 +14,9 @@ describe("MainNav", () => {
     expect(mainNavTexts).toEqual([
       "Home",
       "Services",
-      "Menu",
+      "Restaurants",
       "Contact",
-      "Location",
+      "Career",
     ]);
   });
 
