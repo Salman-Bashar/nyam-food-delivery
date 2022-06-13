@@ -33,11 +33,11 @@ export default {
 
 <style scoped>
 button {
-  @apply px-8 py-3 font-medium rounded-full;
+  @apply px-8 py-3 font-medium;
 }
 
 .primary {
-  @apply text-white bg-brand-red-2 hover:shadow-red;
+  @apply rounded-full text-white bg-brand-red-2 hover:shadow-red;
 }
 
 .secondary {
