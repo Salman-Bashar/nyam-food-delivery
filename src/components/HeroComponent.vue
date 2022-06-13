@@ -7,7 +7,9 @@
           <head-line />
           <restaurant-search-form />
         </div>
-        <div class="col-start-7 col-span-5"></div>
+        <div class="col-start-7 col-span-5">
+          <head-image />
+        </div>
         <div class="col-start-12 col-span-1"></div>
       </div>
     </section>
@@ -16,13 +18,20 @@
 
 <script>
 import HeadLine from "@/components/HeadLine.vue";
-import RestaurantSearchForm from "./RestaurantSearchForm.vue";
+import RestaurantSearchForm from "@/components/RestaurantSearchForm.vue";
+import HeadImage from "@/components/HeadImage.vue";
 
 export default {
   name: "HeroComponent",
   components: {
     HeadLine,
+    HeadImage,
     RestaurantSearchForm,
+  },
+  data() {
+    return {
+      foodImage: require("@/assets/images/foodImage01.jpg"),
+    };
   },
 };
 </script>

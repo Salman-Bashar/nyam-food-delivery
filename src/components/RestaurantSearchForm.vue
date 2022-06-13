@@ -8,6 +8,7 @@
       <div class="relative flex items-center flex-1 h-full pr-3">
         <label class="absolute left-0 -top-8">Eat</label>
         <input
+          v-model="food"
           type="text"
           placeholder="Pizza, Burger, Steak etc..."
           class="w-full text-lg font-normal focus:outline-none bg-brand-red-1"
@@ -20,6 +21,7 @@
       <div class="relative flex items-center flex-1 h-full pl-3">
         <label class="absolute left-0 -top-8">Location</label>
         <input
+          v-model="location"
           type="text"
           placeholder="Dhanmondi"
           class="w-full text-lg font-normal focus:outline-none bg-brand-red-1"
@@ -37,6 +39,12 @@ export default {
   name: "RestaurantSearchForm",
   components: {
     ActionButton,
+  },
+  data() {
+    return {
+      food: "",
+      location: "",
+    };
   },
 };
 </script>
