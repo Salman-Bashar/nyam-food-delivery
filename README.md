@@ -1,4 +1,4 @@
-# Nyam Food Deliver
+# Nyam Food Delivery
 
 ## Project setup
 ```
