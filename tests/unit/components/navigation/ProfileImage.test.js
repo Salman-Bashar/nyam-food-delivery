@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import ProfileImage from "@/components/ProfileImage.vue";
+import ProfileImage from "@/components/navigation/ProfileImage.vue";
 
 describe("ProfileImage", () => {
   it("renders", () => {

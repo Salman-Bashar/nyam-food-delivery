@@ -5,6 +5,11 @@
       :src="images[currentImageIndex]"
     />
   </section>
+  <section class="pl-24">
+    <div
+      class="object-contain rounded-full bg-brand-red-2 w-4 h-4 animate-pulse"
+    ></div>
+  </section>
 </template>
 
 <script>

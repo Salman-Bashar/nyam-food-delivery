@@ -7,7 +7,7 @@
           <head-line />
           <restaurant-search-form />
         </div>
-        <div class="col-start-7 col-span-5">
+        <div class="col-start-7 col-span-5 self-center justify-self-center">
           <head-image />
         </div>
         <div class="col-start-12 col-span-1"></div>
@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import HeadLine from "@/components/HeadLine.vue";
-import RestaurantSearchForm from "@/components/RestaurantSearchForm.vue";
-import HeadImage from "@/components/HeadImage.vue";
+import HeadLine from "@/components/restaurant_search/HeadLine.vue";
+import RestaurantSearchForm from "@/components/restaurant_search/RestaurantSearchForm.vue";
+import HeadImage from "@/components/restaurant_search/HeadImage.vue";
 
 export default {
   name: "HeroComponent",
