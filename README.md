@@ -1,4 +1,4 @@
-# fast-food-delivery
+# Nyam Food Deliver
 
 ## Project setup
 ```
