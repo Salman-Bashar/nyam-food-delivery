@@ -56,7 +56,7 @@ export default {
     return {
       company: "Nyam.",
       logo: require("@/assets/images/logo.png"),
-      menuItems: ["Home", "Services", "Restaurants", "Contact", "Career"],
+      menuItems: ["Home", "Services", "Restaurants"],
       isLoggedIn: false,
     };
   },
