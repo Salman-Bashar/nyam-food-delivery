@@ -1,5 +1,9 @@
 # Nyam Food Delivery Service
 
+## Website Demo
+
+[Click Me!](https://nyam-food-delivery.herokuapp.com/)
+
 ## Project setup
 
 ```
