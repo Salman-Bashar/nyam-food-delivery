@@ -1,8 +1,6 @@
 <template>
   <header :class="['w-full', 'text-sm', headerHeightClass]">
-    <div
-      class="fixed top-0 left-0 w-full h-16 border-b border-solid border-brand-grey-1 bg-brand-red-1"
-    >
+    <div class="fixed top-0 left-0 w-full h-16 bg-brand-red-1">
       <div class="flex flex-nowrap h-full px-44 mx-auto">
         <img :src="logo" class="h-12 mr-2 pt-4" />
         <a href="/" class="flex items-center h-full text-xl font-bold">{{
@@ -19,7 +17,7 @@
             >
               <a
                 href=""
-                class="flex items-center h-full py-2.5 font-medium hover:text-brand-red-2"
+                class="flex items-center h-full py-2.5 font-bold hover:text-brand-red-2 hover:border-b-2 hover:border-brand-red-2"
                 >{{ menuItem }}</a
               >
             </li>
@@ -41,9 +39,9 @@
 </template>
 
 <script>
-import ActionButton from "@/components/ActionButton.vue";
-import ProfileImage from "@/components/ProfileImage.vue";
-import SubNav from "@/components/SubNav.vue";
+import ActionButton from "@/components/shared/ActionButton.vue";
+import ProfileImage from "@/components/navigation/ProfileImage.vue";
+import SubNav from "@/components/navigation/SubNav.vue";
 
 export default {
   name: "MainNav",

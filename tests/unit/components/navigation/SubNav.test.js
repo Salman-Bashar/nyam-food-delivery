@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import SubNav from "@/components/SubNav.vue";
+import SubNav from "@/components/navigation/SubNav.vue";
 
 describe("Subnav", () => {
   describe("When user is on Restaurants page", () => {
