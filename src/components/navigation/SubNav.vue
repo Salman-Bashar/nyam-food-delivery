@@ -1,5 +1,5 @@
 <template>
-  <h1
+  <div
     class="w-full h-16 bg-brand-red-1 border-b border-solid border-brand-grey-1"
   >
     <div class="flex h-full items-center px-44">
@@ -11,7 +11,7 @@
         </span>
       </div>
     </div>
-  </h1>
+  </div>
 </template>
 
 <script>

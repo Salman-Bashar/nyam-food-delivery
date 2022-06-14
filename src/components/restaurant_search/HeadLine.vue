@@ -8,7 +8,7 @@
       <br />
       Food Delivery
     </h1>
-    <h2 class="text-3xl font-light">Find your next meal at Nyam.</h2>
+    <h2 class="text-3xl font-light pl-1">Find your next meal at Nyam.</h2>
   </section>
 </template>
 

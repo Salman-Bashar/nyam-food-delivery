@@ -1,14 +1,9 @@
 <template>
   <section class="self-center justify-self-center pl-24">
     <img
-      class="w-4/5 h-4/5 object-contain rounded-full"
+      class="w-11/12 h-full object-contain rounded-full"
       :src="images[currentImageIndex]"
     />
-  </section>
-  <section class="pl-24">
-    <div
-      class="object-contain rounded-full bg-brand-red-2 w-4 h-4 animate-pulse"
-    ></div>
   </section>
 </template>
 
