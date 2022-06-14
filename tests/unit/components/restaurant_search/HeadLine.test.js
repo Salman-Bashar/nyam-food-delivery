@@ -1,4 +1,4 @@
-import { mount } from "@vue/test-utils";
+import { shallowMount } from "@vue/test-utils";
 import HeadLine from "@/components/restaurant_search/HeadLine.vue";
 import { nextTick } from "process";
 
@@ -12,7 +12,7 @@ describe("HeadLine", () => {
   });
 
   it("displays introductory action verb", () => {
-    const wrapper = mount(HeadLine);
+    const wrapper = shallowMount(HeadLine);
     const actionPhrase = wrapper.find("[data-test='action-phrase']");
     expect(actionPhrase.text()).toBe("Fastest Food Delivery");
   });
@@ -26,7 +26,7 @@ describe("HeadLine", () => {
   */
 
   it("swaps action verb after first interval", async () => {
-    const wrapper = mount(HeadLine);
+    const wrapper = shallowMount(HeadLine);
     jest.runOnlyPendingTimers();
     await nextTick();
     const actionPhrase = wrapper.find("[data-test='action-phrase']");
