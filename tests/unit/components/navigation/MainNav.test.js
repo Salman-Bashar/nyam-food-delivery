@@ -11,13 +11,7 @@ describe("MainNav", () => {
     const wrapper = shallowMount(MainNav);
     const mainNavItems = wrapper.findAll("[data-test='main-nav-menu-item']");
     const mainNavTexts = mainNavItems.map((item) => item.text());
-    expect(mainNavTexts).toEqual([
-      "Home",
-      "Services",
-      "Restaurants",
-      "Contact",
-      "Career",
-    ]);
+    expect(mainNavTexts).toEqual(["Home", "Services", "Restaurants"]);
   });
 
   describe("when user is logged out", () => {
