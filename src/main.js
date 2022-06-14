@@ -6,6 +6,7 @@ import {
   faHeart,
   faCirclePlay,
   faSquarePhone,
+  faBagShopping,
 } from "@fortawesome/free-solid-svg-icons";
 
 import App from "@/App.vue";
@@ -15,5 +16,6 @@ library.add(faSearch);
 library.add(faHeart);
 library.add(faCirclePlay);
 library.add(faSquarePhone);
+library.add(faBagShopping);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

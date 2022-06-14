@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <section class="flex flex-col h-80 pt-10 pb-20 bg-white">
+    <section class="flex flex-col h-72 pt-10 pb-20 bg-white">
       <div class="grid grid-cols-12">
         <div class="col-start-1 col-span-1"></div>
         <div class="col-start-2 col-span-4">
@@ -52,6 +52,9 @@
         <div class="col-start-12 col-span-1"></div>
       </div>
     </section>
+    <div class="font-light text-center mb-4 pt-4 border-t border-brand-dark-1">
+      &copy; Nyam. All rights reserved.
+    </div>
   </footer>
 </template>
 

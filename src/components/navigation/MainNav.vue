@@ -24,6 +24,12 @@
           </ul>
         </nav>
         <div class="flex items-center h-full ml-auto">
+          <div>
+            <font-awesome-icon
+              :icon="['fas', 'bag-shopping']"
+              class="mr-12 h-6"
+            />
+          </div>
           <profile-image v-if="isLoggedIn" data-test="profile-image" />
           <action-button
             v-else
