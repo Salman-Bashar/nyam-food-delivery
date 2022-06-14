@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <footer>
     <section class="flex flex-col h-80 pt-10 pb-20 bg-white">
       <div class="grid grid-cols-12">
         <div class="col-start-1 col-span-1"></div>
@@ -52,7 +52,7 @@
         <div class="col-start-12 col-span-1"></div>
       </div>
     </section>
-  </main>
+  </footer>
 </template>
 
 <script>
