@@ -1,7 +1,6 @@
 const express = require("express");
 const serveStatic = require("serve-static");
 const path = require("path");
-const jsonServer = require("json-server");
 
 const app = express();
 
@@ -16,13 +15,3 @@ app.get(/.*/, function (req, res) {
 const port = process.env.PORT || 8080;
 app.listen(port);
 console.log(`app is listening on port: ${port}`);
-
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
-const DBport = process.env.PORT || 3000;
-
-server.use(middlewares);
-server.use(router);
-
-server.listen(DBport);
