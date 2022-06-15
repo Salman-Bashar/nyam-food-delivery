@@ -3,22 +3,24 @@
     <div class="fixed top-0 left-0 w-full h-16 bg-brand-red-1">
       <div class="flex flex-nowrap h-full px-44 mx-auto">
         <img :src="logo" class="h-12 mr-2 pt-4" />
-        <a href="/" class="flex items-center h-full text-xl font-bold">{{
-          company
-        }}</a>
+        <router-link
+          :to="{ name: 'home' }"
+          class="flex items-center h-full text-xl font-bold"
+          >Nyam.</router-link
+        >
 
         <nav class="h-full ml-48">
           <ul class="flex h-full p-0 m-0 list-none">
             <li
               v-for="menuItem in menuItems"
-              :key="menuItem"
+              :key="menuItem.text"
               class="h-full ml-14 first:ml-0"
               data-test="main-nav-menu-item"
             >
-              <a
-                href=""
+              <router-link
+                :to="menuItem.url"
                 class="flex items-center h-full py-2.5 font-bold hover:text-brand-red-2 hover:border-b-2 hover:border-brand-red-2"
-                >{{ menuItem }}</a
+                >{{ menuItem.text }}</router-link
               >
             </li>
           </ul>
@@ -54,9 +56,12 @@ export default {
   components: { ActionButton, ProfileImage, SubNav },
   data() {
     return {
-      company: "Nyam.",
       logo: require("@/assets/images/logo.png"),
-      menuItems: ["Home", "Services", "Restaurants"],
+      menuItems: [
+        { text: "Home", url: "/" },
+        { text: "Services", url: "/" },
+        { text: "Restaurants", url: "/restaurants" },
+      ],
       isLoggedIn: false,
     };
   },

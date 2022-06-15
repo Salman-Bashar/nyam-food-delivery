@@ -17,15 +17,21 @@ import {
 
 import App from "@/App.vue";
 import "@/assets/tailwind.css";
+import router from "@/router";
 
-library.add(faSearch);
-library.add(faHeart);
-library.add(faCirclePlay);
-library.add(faSquarePhone);
-library.add(faBagShopping);
-library.add(faFacebook);
-library.add(faInstagram);
-library.add(faTwitter);
-library.add(faYoutube);
+library.add(
+  faSearch,
+  faHeart,
+  faCirclePlay,
+  faSquarePhone,
+  faBagShopping,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube
+);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App)
+  .use(router)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .mount("#app");
