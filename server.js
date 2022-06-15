@@ -20,7 +20,7 @@ console.log(`app is listening on port: ${port}`);
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
-const DBport = process.env.PORT || 4000;
+const DBport = process.env.PORT || 3000;
 
 server.use(middlewares);
 server.use(router);
