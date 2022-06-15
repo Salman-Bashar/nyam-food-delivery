@@ -7,6 +7,8 @@ import {
   faCirclePlay,
   faSquarePhone,
   faBagShopping,
+  faAngleUp,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -28,7 +30,9 @@ library.add(
   faFacebook,
   faInstagram,
   faTwitter,
-  faYoutube
+  faYoutube,
+  faAngleUp,
+  faAngleDown
 );
 
 createApp(App)

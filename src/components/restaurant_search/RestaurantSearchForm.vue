@@ -1,12 +1,19 @@
 <template>
+  <h2 class="text-3xl font-light pl-1">
+    <span class="font-bold">Hungry?</span>
+    <br />
+    Search for your favourite food here!
+  </h2>
+  <h3 class="text-2xl font-light pl-1">
+    Find your next meal at <span class="text-brand-red-2 font-bold">Nyam.</span>
+  </h3>
   <form
-    class="flex items-center w-full h-12 mt-14 border border-solid border-brand-dark-1 rounded-3xl"
+    class="flex items-center w-full h-12 mt-6 border border-solid border-brand-dark-1 rounded-3xl"
     @submit.prevent="searchForRestaurants"
   >
     <font-awesome-icon :icon="['fas', 'search']" class="m-3" />
     <div class="flex flex-nowrap flex-1 h-full text-base font-light">
       <div class="relative flex items-center flex-1 h-full pr-3">
-        <label class="absolute left-0 -top-8">Eat</label>
         <text-input
           v-model="food"
           placeholder="Pizza, Burger, Steak etc..."
@@ -18,7 +25,6 @@
         >in</span
       >
       <div class="relative flex items-center flex-1 h-full pl-3">
-        <label class="absolute left-0 -top-8">Location</label>
         <text-input
           v-model="location"
           placeholder="Dhanmondi"

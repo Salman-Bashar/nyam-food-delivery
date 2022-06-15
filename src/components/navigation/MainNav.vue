@@ -59,7 +59,7 @@ export default {
       logo: require("@/assets/images/logo.png"),
       menuItems: [
         { text: "Home", url: "/" },
-        { text: "Services", url: "/" },
+        { text: "Services", url: "/services" },
         { text: "Restaurants", url: "/restaurants" },
       ],
       isLoggedIn: false,
