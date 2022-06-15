@@ -18,7 +18,7 @@ export default {
     };
   },
   async mounted() {
-    const baseUrl = "http://localhost:3000";
+    const baseUrl = "https://nyam-db.herokuapp.com/";
     const response = await axios.get(`${baseUrl}/offers`);
     this.offers = response.data;
   },
