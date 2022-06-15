@@ -22,7 +22,7 @@
           to="/restaurants"
           class="flex flex-col mx-5 border rounded-lg w-72 bg-brand-grey-2 h-96"
         >
-          <img :src="foodImage" class="object-contain" />
+          <img :src="slotProps.offer.img" class="object-contain" />
           <div class="h-48 px-6 py-4 mt-3">
             <h3 class="text-lg font-medium">
               {{ slotProps.offer.title }}
