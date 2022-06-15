@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655232067506" clover="3.2.0">
-  <project timestamp="1655232067506" name="All files">
+<coverage generated="1655288847636" clover="3.2.0">
+  <project timestamp="1655288847636" name="All files">
     <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="22" coveredelements="22" complexity="0" loc="16" ncloc="16" packages="4" files="7" classes="7"/>
     <package name="assets.images">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -22,22 +22,22 @@
       </file>
       <file name="SubNav.vue" path="F:\Projects\fast-food-delivery\src\components\navigation\SubNav.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.shared">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="F:\Projects\fast-food-delivery\src\components\shared\ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="F:\Projects\fast-food-delivery\src\components\shared\TextInput.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
       </file>
     </package>
     <package name="utils">
