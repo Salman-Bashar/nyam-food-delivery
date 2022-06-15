@@ -15,20 +15,20 @@ export default {
       offers: [
         {
           id: 1,
-          img: "@/assets/images/foodImage01.jpg",
+          img: require("@/assets/images/foodImage01.jpg"),
           title: "Buy 1 Get 1 Offer!",
           description:
             "This week enjoy our double burger offer, by paying only for one. Time limited offer. Get it now!",
         },
         {
           id: 2,
-          img: "@/assets/images/foodImage02.jpg",
+          img: require("@/assets/images/foodImage02.jpg"),
           title: "10% Discount Offer!",
           description: "Get any pizza at 10% discount.",
         },
         {
           id: 3,
-          img: "@/assets/images/foodImage04.jpg",
+          img: require("@/assets/images/foodImage04.jpg"),
           title: "Free Wedges with Steak Platter",
           description: "Get free wedges with any of our steak platters.",
         },
