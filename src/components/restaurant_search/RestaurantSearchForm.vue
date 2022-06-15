@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-3xl font-light pl-1">
-    <span class="font-bold">Hungry?</span>
+    <span class="font-bold">Feeling Hungry?</span>
     <br />
     Search for your favourite food here!
   </h2>
