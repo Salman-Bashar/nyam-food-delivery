@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen border-b border-solid border-brand-grey-1">
+  <div class="w-full h-screen">
     <div class="mx-auto my-16 text-center">
       <slot name="title">Sample Title</slot>
       <slot name="subtitle">Sample Subtitle</slot>

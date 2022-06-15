@@ -36,9 +36,11 @@
                 class="py-2 hover:font-bold"
                 data-test="footer-menu-links"
               >
-                <a href="" class="font-normal hover:font-bold">{{
-                  menuLink
-                }}</a>
+                <router-link
+                  :to="menuLink.url"
+                  class="font-normal hover:font-bold"
+                  >{{ menuLink.text }}</router-link
+                >
               </li>
             </ul>
           </div>
@@ -89,7 +91,11 @@ export default {
   data() {
     return {
       logo: require("@/assets/images/logo.png"),
-      menuLinks: ["Home", "Services", "Restaurants"],
+      menuLinks: [
+        { text: "Home", url: "/" },
+        { text: "Services", url: "/services" },
+        { text: "Restaurants", url: "/restaurants" },
+      ],
       aboutLinks: ["Partners", "Press", "Career"],
     };
   },

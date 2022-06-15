@@ -5,7 +5,7 @@
     <div class="flex h-full items-center px-44">
       <div v-if="onRestaurantsPage" data-test="restaurant-count">
         <font-awesome-icon :icon="['fas', 'search']" class="mr-3" />
-        <span> <span class="text-green-700">87</span> Restaurants found </span>
+        <span> <span class="text-green-700">12</span> Restaurants found </span>
       </div>
     </div>
   </div>
