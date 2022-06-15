@@ -1,14 +1,13 @@
 <template>
-  <section class="mb-16">
+  <section class="mb-24">
     <h1
-      class="font-bold tracking-tighter text-8xl mb-10"
+      class="font-bold tracking-tighter text-8xl mb-12"
       data-test="action-phrase"
     >
       <span :class="actionClasses">{{ action }}</span>
       <br />
       Food Delivery
     </h1>
-    <h2 class="text-3xl font-light pl-1">Find your next meal at Nyam.</h2>
   </section>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-auto p-8 bg-brand-grey-2">
+  <main class="flex-auto w-5/6 p-8 bg-brand-grey-2">
     <ol>
       <restaurant-listing
         v-for="restaurant in displayedRestaurants"
@@ -68,7 +68,8 @@ export default {
     },
   },
   async mounted() {
-    const response = await axios.get("http://localhost:3000/restaurants");
+    const baseUrl = "http://localhost:3000";
+    const response = await axios.get(`${baseUrl}/restaurants`);
     this.restaurants = response.data;
   },
 };

@@ -3,7 +3,7 @@
     type="text"
     :placeholder="placeholder"
     :value="modelValue"
-    class="w-full text-lg font-normal focus:outline-none bg-brand-red-1"
+    class="w-full text-lg font-normal focus:outline-none bg-white"
     @input="handleInput"
   />
 </template>

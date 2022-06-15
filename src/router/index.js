@@ -5,6 +5,8 @@ const RestaurantsView = () =>
   import(/* webpackChunkName: "restaurants" */ "@/views/RestaurantsView.vue");
 const RestaurantView = () =>
   import(/* webpackChunkName: "restaurants" */ "@/views/RestaurantView.vue");
+const ServicesView = () =>
+  import(/* webpackChunkName: "services" */ "@/views/ServicesView.vue");
 
 const routes = [
   {
@@ -21,6 +23,11 @@ const routes = [
     path: "/restaurants/:id",
     name: "RestaurantListing",
     component: RestaurantView,
+  },
+  {
+    path: "/services",
+    name: "Services",
+    component: ServicesView,
   },
 ];
 
