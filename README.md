@@ -28,6 +28,12 @@ npm run build
 npm run test:unit
 ```
 
+### Run Project with Fake Backend Data
+
+```
+npm run backend
+```
+
 ### Lints and fixes files
 
 ```
